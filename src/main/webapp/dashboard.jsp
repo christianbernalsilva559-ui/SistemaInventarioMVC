@@ -1,17 +1,38 @@
-<%-- 
-    Document   : dashboard
-    Created on : 2 may 2026, 15:00:12
-    Author     : USER
---%>
-
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%
+    String usuario = (String) session.getAttribute("usuario");
+
+    if(usuario == null){
+        response.sendRedirect("login.jsp");
+        return;
+    }
+%>
+
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
-    </head>
-    <body>
-        <h1>Hello World!</h1>
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard - Sistema Inventario</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+    <div class="dashboard-container">
+        <h1>Bienvenido, <%= usuario %></h1>
+
+        <nav>
+            <ul>
+                <li><a href="dashboard.jsp">Inicio</a></li>
+                <li><a href="ProductoServlet">Productos</a></li>
+                <li><a href="LogoutServlet">Cerrar sesión</a></li>
+            </ul>
+        </nav>
+
+        <section>
+            <h2>Panel Principal</h2>
+            <p>Gestiona inventario, productos y ventas.</p>
+        </section>
+    </div>
+
+</body>
 </html>

@@ -1,0 +1,400 @@
+/* =========================================
+   RESET GENERAL
+========================================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* =========================================
+   BODY GLOBAL
+========================================= */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #0f172a, #1e3a8a, #2563eb);
+    min-height: 100vh;
+    color: #1e293b;
+}
+
+/* =========================================
+   LOGIN PAGE
+========================================= */
+.login-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* =========================================
+   LOGIN CARD
+========================================= */
+.login-container {
+    width: 100%;
+    max-width: 420px;
+    background-color: rgba(255, 255, 255, 0.98);
+    padding: 45px;
+    border-radius: 18px;
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(8px);
+}
+
+.login-container h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #0f172a;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.login-container p {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #64748b;
+}
+
+/* =========================================
+   ERROR MESSAGE
+========================================= */
+.error-message {
+    background-color: #fee2e2;
+    color: #b91c1c;
+    padding: 12px;
+    border-radius: 10px;
+    margin-bottom: 18px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* =========================================
+   FORMULARIOS
+========================================= */
+label {
+    display: block;
+    margin-bottom: 8px;
+    margin-top: 15px;
+    font-weight: 600;
+    color: #334155;
+}
+
+input[type="email"],
+input[type="password"],
+input[type="text"],
+input[type="number"] {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #cbd5e1;
+    border-radius: 12px;
+    font-size: 15px;
+    background-color: #f8fafc;
+    transition: all 0.3s ease;
+}
+
+input:focus {
+    outline: none;
+    border-color: #2563eb;
+    background-color: white;
+    box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.15);
+}
+
+/* =========================================
+   BOTONES GENERALES
+========================================= */
+button,
+.btn {
+    width: 100%;
+    padding: 14px;
+    margin-top: 25px;
+    background: linear-gradient(135deg, #2563eb, #1d4ed8);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 700;
+    transition: all 0.3s ease;
+}
+
+button:hover,
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(37, 99, 235, 0.25);
+}
+
+/* =========================================
+   DASHBOARD
+========================================= */
+.dashboard-container {
+    width: 92%;
+    max-width: 1200px;
+    margin: 35px auto;
+    background-color: rgba(255, 255, 255, 0.98);
+    padding: 35px;
+    border-radius: 18px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.dashboard-container h1 {
+    text-align: center;
+    color: #0f172a;
+    margin-bottom: 10px;
+    font-size: 34px;
+}
+
+.dashboard-container h2 {
+    color: #1e293b;
+    margin-bottom: 15px;
+}
+
+.dashboard-container p {
+    color: #475569;
+    line-height: 1.6;
+}
+
+/* =========================================
+   NAVBAR
+========================================= */
+nav {
+    background: linear-gradient(135deg, #0f172a, #1e3a8a);
+    padding: 18px;
+    border-radius: 14px;
+    margin: 30px 0;
+    box-shadow: 0 8px 20px rgba(15, 23, 42, 0.25);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 18px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 10px 18px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+/* =========================================
+   TARJETAS
+========================================= */
+.card {
+    background: #f8fafc;
+    border-radius: 14px;
+    padding: 25px;
+    margin-top: 20px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+/* =========================================
+   TABLAS
+========================================= */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 25px;
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+table th {
+    background: linear-gradient(135deg, #2563eb, #1d4ed8);
+    color: white;
+    padding: 14px;
+    font-size: 15px;
+}
+
+table td {
+    padding: 14px;
+    text-align: center;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+table tr:nth-child(even) {
+    background-color: #f8fafc;
+}
+
+table tr:hover {
+    background-color: #dbeafe;
+}
+
+/* =========================================
+   ACCIONES TABLA PRODUCTOS
+========================================= */
+.acciones {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.acciones a {
+    display: inline-block;
+    text-decoration: none !important;
+    padding: 8px 14px;
+    border-radius: 8px;
+    color: white !important;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    min-width: 80px;
+    transition: all 0.3s ease;
+}
+
+.btn-editar {
+    background-color: #f59e0b;
+}
+
+.btn-editar:hover {
+    background-color: #d97706;
+    transform: translateY(-2px);
+}
+
+.btn-eliminar {
+    background-color: #dc2626;
+}
+
+.btn-eliminar:hover {
+    background-color: #b91c1c;
+    transform: translateY(-2px);
+}
+
+/* =========================================
+   BUSCADOR PROFESIONAL
+========================================= */
+.busqueda-contenedor {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.input-busqueda {
+    flex: 1;
+    min-width: 250px;
+    padding: 14px;
+    border: 1px solid #cbd5e1;
+    border-radius: 12px;
+    font-size: 15px;
+    background-color: #f8fafc;
+}
+
+.btn-buscar {
+    padding: 14px 22px;
+    background: linear-gradient(135deg, #2563eb, #1d4ed8);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+/* =========================================
+   BOTÓN MOSTRAR TODOS
+========================================= */
+.btn-mostrar-todos-inline {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 14px 22px !important;
+    min-width: 160px !important;
+    height: 50px !important;
+    background: linear-gradient(135deg, #0f172a, #334155) !important;
+    color: white !important;
+    text-decoration: none !important;
+    border-radius: 12px !important;
+    font-size: 15px !important;
+    font-weight: 700 !important;
+    white-space: nowrap !important;
+    transition: all 0.3s ease !important;
+    box-shadow: 0 8px 18px rgba(15, 23, 42, 0.20) !important;
+}
+
+.btn-mostrar-todos-inline:hover {
+    transform: translateY(-2px) !important;
+    background: linear-gradient(135deg, #1e293b, #475569) !important;
+}
+
+/* =========================================
+   PAGINACIÓN
+========================================= */
+.paginacion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 25px;
+    padding: 20px 0;
+}
+
+.btn-pagina {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 45px;
+    height: 45px;
+    padding: 0 16px;
+    text-decoration: none !important;
+    background: white;
+    color: #1e293b !important;
+    border: 1px solid #cbd5e1;
+    border-radius: 12px;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.btn-pagina:hover {
+    background: linear-gradient(135deg, #2563eb, #1d4ed8);
+    color: white !important;
+}
+
+.pagina-activa {
+    background: linear-gradient(135deg, #0f172a, #1e3a8a);
+    color: white !important;
+    border: none;
+}
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+@media (max-width: 768px) {
+    .login-container,
+    .dashboard-container {
+        width: 95%;
+        padding: 25px;
+    }
+
+    .login-container h2 {
+        font-size: 24px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .acciones {
+        flex-direction: column;
+    }
+
+    .busqueda-contenedor {
+        flex-direction: column;
+        align-items: stretch;
+    }
+}
